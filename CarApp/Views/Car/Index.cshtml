@@ -1,0 +1,35 @@
+﻿@model CarApp.Models.CarAppEntities
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <h1>
+            Car Table
+        </h1>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Color</th>
+                <th>YearMade</th>
+            </tr>
+            @foreach(var result in Model.Cars)
+            {
+                <tr>
+                    <td>@result.Id</td>
+                    <td>@result.Name</td>
+                    <td>@result.Color</td>
+                    <td>@result.YearMade</td>
+                </tr>
+            }
+        </table>
+    
+    </div>
+</body>
+</html>

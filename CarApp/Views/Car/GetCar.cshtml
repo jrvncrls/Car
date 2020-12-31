@@ -1,0 +1,32 @@
+﻿@model CarApp.Models.Car
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <h1>
+            Car Table
+        </h1>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Color</th>
+                <th>YearMade</th>
+            </tr>
+                <tr>
+                    <td>@Model.Id</td>
+                    <td>@Model.Name</td>
+                    <td>@Model.Color</td>
+                    <td>@Model.YearMade</td>
+                </tr>
+        </table>
+
+    </div>
+</body>
+</html>
